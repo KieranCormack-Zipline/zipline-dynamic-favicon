@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Zipline Dynamic Favicon Helper",
+    "version": "1.0",
+    "description": "Change Zipline Favicon dependant on Environment",
+    "author": "kieran@zipline.inc",
+    "icons": {
+      "16": "images/zipline16.png",
+      "48": "images/zipline48.png"
+    },
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "matches": [
+          "https://*.retailzipline.xyz/*",
+          "https://*.retailzipline.com/*",
+          "https://*.getzipline.co/*"
+        ]
+      }
+    ]
+  }
